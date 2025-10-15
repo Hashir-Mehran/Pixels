@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { navlinks } from "../data/navlinks";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.svg'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
                 <Link href="/">
-                    <img className="h-8.5 w-auto" src="/assets/logo.svg" alt="logo" />
+                    <img className="h-8.5 w-auto" src={logo} alt="logo" />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 transition duration-500">

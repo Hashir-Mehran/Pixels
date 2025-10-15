@@ -2,6 +2,7 @@ import { CheckIcon, ChevronRightIcon, VideoIcon } from "lucide-react";
 import { motion } from "motion/react";
 import TiltedImage from "../components/TiltImage";
 
+
 export default function HeroSection() {
     const specialFeatures = [
         "No credit card",

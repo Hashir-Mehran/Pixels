@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
+import hero from "../assets/hero-section-showcase.png"; // extension include karo
+
 
 const springValues = {
     damping: 30,
@@ -52,7 +54,7 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
             <motion.div className="relative [transform-style:preserve-3d] w-full max-w-4xl" style={{ rotateX, rotateY }} >
-                <motion.img src="/assets/hero-section-showcase.png"
+                <motion.img src={hero}  
                     className="w-full rounded-[15px] will-change-transform [transform:translateZ(0)]"
                     alt="hero section showcase"
                 />
